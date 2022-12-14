@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,7 +54,12 @@ Route::get('/barang/cetakpdf', [\App\Http\Controllers\BarangController::class, '
 Route::resource('barang', \App\Http\Controllers\BarangController::class)
     ->middleware('auth');
 
-// Route::get('barang/cetakpdf','HomeController@pdf');
+Route::get('/sending-queue-emails', [\App\Http\Controllers\TestQueueEmails::class,'sendTestEmails']);
+
+
+
+
+// Route::get('barang/cetakpdsf','HomeController@pdf');
 
     // Route::resource('barang/cetakpdf', \App\Http\Controllers\BarangController-cetakPDF::class)
     // ->middleware('auth');

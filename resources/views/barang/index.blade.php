@@ -53,8 +53,8 @@
     </div>
 @stop
 @push('js')
-    <form action="" id="destroy-form" method="post">
-        @method('destroy')
+    <form action="" id="delete-form" method="post">
+        @method('delete')
         @csrf
     </form>
     <script>
@@ -64,8 +64,8 @@
         function notificationBeforeDelete(event, el) {
             event.preventDefault();
             if (confirm('Apakah anda yakin akan menghapus data ? ')) {
-                $("#destroy-form").attr('action', $(el).attr('href'));
-                $("#destroy-form").submit();
+                $("#delete-form").attr('action', $(el).attr('href'));
+                $("#delete-form").submit();
             },
         }
     //     public function cetakpdf()

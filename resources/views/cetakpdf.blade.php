@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
  
-    <title>Data Karyawan</title>
+    <title>Data Barang</title>
 </head>
  
 <body>
@@ -19,6 +19,7 @@
             <h1 class="display-4 mt-2">Laporan Barang</h1>
         </div>
         <table class="table table-hover table-bordered table-stripped" id="example2">
+        <table class="static" align="center" rules="all" border="1px" style="width: 95%;" id="example2">
                         <thead>
                         <tr>
                             <th>No.</th>
@@ -41,6 +42,7 @@
                         @endforeach
                         </tbody>
                     </table>
+</table>
     </div>
  
  
